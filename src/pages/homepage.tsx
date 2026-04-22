@@ -1,11 +1,11 @@
-import { Navbar } from "../layout/navbar"
+import { Navbar } from '../layout/header';
 
 export function Homepage() {
   return (
-    <div className="homepage">
-        <Navbar />
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is the homepage of my portfolio website. Here you can find information about me, my projects, and how to contact me.</p>
-    </div>
+      <><Navbar /><div className="bg-gray-200 h-screen">
+      <p>
+        This is the content of the page. You can add more components and content here.
+      </p>
+    </div></>
   );
 }
