@@ -1,37 +1,35 @@
-export function Navbar() {
-  const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "Projects", href: "#" },
-    { name: "Experience", href: "#" },
-    { name: "Contact", href: "#" },
-  ];
+import { useDarkMode } from "../hooks/useDarkMode";
+
+// components/layout/Navbar.tsx
+export const Navbar = () => {
+  const toggleDarkMode = useDarkMode();
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800">
-      <div className="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+    <nav className="navbar">
+      <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <span className="font-bold text-brand dark:text-brand-dark text-xl">
+          DOMINIC IAN BRAVO
+        </span>
         
-        {/* Logo */}
-        <div className="text-xl font-bold tracking-tighter text-zinc-50">
-          DOMINI IAN BRAVO
-        </div>
-
-        {/* Links */}
-        <ul className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <li 
-              key={link.name} 
-              className="text-zinc-400 hover:text-cyan-400 transition-colors duration-200 font-medium"
-            >
-              <a href={link.href}>{link.name}</a>
-            </li>
-          ))}
+        <ul className="flex gap-6 text-text-muted dark:text-text-muted-dark font-medium">
+          <li className="hover:text-brand transition-colors cursor-pointer">Home</li>
+          <li className="hover:text-brand transition-colors cursor-pointer">Projects</li>
+          <li className="hover:text-brand transition-colors cursor-pointer">Experience</li>
+          <li className="hover:text-brand transition-colors cursor-pointer">Contact</li>
         </ul>
 
-        {/* Action Button */}
-        <button className="bg-cyan-600 text-white px-6 py-2 font-semibold hover:bg-cyan-500 hover:scale-105 active:scale-95 transition-all duration-200 rounded-lg shadow-lg shadow-cyan-900/20">
-          Resume
-        </button>
+        <div className="flex items-center gap-4">
+          {/* Theme Toggle Button */}
+          <button 
+            onClick={toggleDarkMode}
+            className="p-2 rounded-lg bg-slate-200 dark:bg-slate-700 text-text-main dark:text-white transition-all"
+          >
+            Toggle Theme
+          </button>
+          
+          <button className="btn-primary">Get in Touch</button>
+        </div>
       </div>
     </nav>
   );
-}
+};
