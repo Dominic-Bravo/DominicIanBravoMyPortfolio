@@ -13,8 +13,8 @@ export const contactMethods: ContactMethod[] = [
     title: "Email",
     subtitle: "direct email",
     description: "Reach out for freelance work, collaborations, or general questions.",
-    href: "mailto:hello@yourdomain.com",
-    label: "hello@yourdomain.com"
+    href: "mailto:dominicianbravo017@gmail.com",
+    label: "dominicianbravo017@gmail.com"
   },
   {
     id: 2,
