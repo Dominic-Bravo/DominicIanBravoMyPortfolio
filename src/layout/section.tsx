@@ -4,12 +4,12 @@ export default function SectionVariant() {
   
   {/* The Pulse Dot: Adjust h-3 w-3 to make the dot bigger/smaller */}
     <span className="relative flex h-3 w-3">
-        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand dark:bg-brand-dark opacity-75"></span>
-        <span className="relative inline-flex rounded-full h-3 w-3 bg-brand dark:bg-brand-dark"></span>
+        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-600 dark:bg-emerald-400 opacity-75"></span>
+        <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-600 dark:bg-emerald-400"></span>
     </span>
 
     {/* The Text: Adjust text-4xl to smaller (e.g., text-xl, text-2xl) */}
-    <span className="font-bold text-brand dark:text-brand-dark text-2xl tracking-tight">
+    <span className="font-bold text-emerald-600 dark:text-emerald-400 text-2xl tracking-tight">
         AVAILABLE FOR NEW PROJECTS
     </span>
     </div>
