@@ -1,15 +1,16 @@
 import { projectsData } from '../data/projects';
 
+// ProjectsPage renders the project showcase using data from the projects data file.
 export function ProjectsPage() {
   return (
-    <div className="bg-white dark:bg-slate-950 min-h-screen">
+    <div className="bg-slate-950 min-h-screen">
       {/* Hero Section */}
-      <div className="bg-slate-50 dark:bg-slate-900 px-6 py-20">
+      <div className="bg-slate-900 px-6 py-20">
         <div className="max-w-6xl mx-auto text-center space-y-4 mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-white">
-            My <span className="text-emerald-600 dark:text-emerald-400">Projects</span>
+          <h1 className="text-5xl md:text-6xl font-bold text-white">
+            My <span className="text-emerald-400">Projects</span>
           </h1>
-          <p className="text-xl text-slate-600 dark:text-slate-400">
+          <p className="text-xl text-slate-300">
             Explore the projects I've built and contributed to
           </p>
         </div>
@@ -22,23 +23,23 @@ export function ProjectsPage() {
             {projectsData.map((project) => (
               <div 
                 key={project.id}
-                className="group bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden hover:border-emerald-600 dark:hover:border-emerald-400 transition-all duration-300 hover:shadow-lg dark:hover:shadow-emerald-500/10"
+                className="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden transition-transform duration-300 ease-out hover:-translate-y-1 hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-500/10"
               >
                 {/* Image Placeholder */}
-                <div className="h-48 bg-gradient-to-br from-emerald-100 to-emerald-50 dark:from-emerald-900/20 dark:to-slate-800 flex items-center justify-center overflow-hidden">
+                <div className="h-48 bg-gradient-to-br from-emerald-900 to-slate-950 flex items-center justify-center overflow-hidden">
                   <div className="text-center">
                     <p className="text-5xl mb-2">📱</p>
-                    <p className="text-sm text-slate-600 dark:text-slate-400">{project.year}</p>
+                    <p className="text-sm text-slate-300">{project.year}</p>
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="p-6 space-y-4">
                   <div>
-                    <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
+                    <h3 className="text-xl font-bold text-slate-100 mb-2">
                       {project.title}
                     </h3>
-                    <p className="text-slate-600 dark:text-slate-400">
+                    <p className="text-slate-300">
                       {project.description}
                     </p>
                   </div>
@@ -66,7 +67,7 @@ export function ProjectsPage() {
                       href={project.liveLink} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex-1 text-center px-3 py-2 bg-emerald-600 dark:bg-emerald-500 hover:bg-emerald-700 dark:hover:bg-emerald-600 text-white text-sm font-medium rounded-lg transition-colors"
+                      className="flex-1 text-center px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium rounded-lg transition duration-300 ease-out hover:-translate-y-0.5"
                     >
                       Live
                     </a>
@@ -74,7 +75,7 @@ export function ProjectsPage() {
                       href={project.githubLink} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex-1 text-center px-3 py-2 border border-emerald-600 dark:border-emerald-400 text-emerald-600 dark:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-slate-700 text-sm font-medium rounded-lg transition-colors"
+                      className="flex-1 text-center px-3 py-2 border border-emerald-600 text-emerald-600 hover:bg-emerald-50 text-sm font-medium rounded-lg transition duration-300 ease-out hover:-translate-y-0.5"
                     >
                       Code
                     </a>

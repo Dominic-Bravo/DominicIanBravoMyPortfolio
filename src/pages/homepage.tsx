@@ -1,12 +1,14 @@
 import SectionVariant from '../layout/section';
 
+// Homepage is the landing page for the portfolio.
+// It includes hero content, featured skills, an about section, and a call-to-action.
 export function Homepage() {
   return (
     <>
       {/* Hero Section */}
       
       {/* Hero Section */}
-      <div className="bg-white dark:bg-slate-950 min-h-screen flex items-center justify-center px-6 py-20">
+      <div className="bg-slate-950 min-h-screen flex items-center justify-center px-6 py-20">
         <div className="max-w-4xl w-full text-center space-y-8">
           {/* Status Badge */}
           <div className="flex justify-center">
@@ -15,16 +17,16 @@ export function Homepage() {
 
           {/* Main Headline */}
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white leading-tight">
-              Hello, I'm <span className="text-emerald-600 dark:text-emerald-400">Dominic Ian</span>
+            <h1 className="text-5xl md:text-7xl font-bold text-slate-100 leading-tight">
+              Hello, I'm <span className="text-emerald-400">Dominic Ian</span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300">
+            <p className="text-xl md:text-2xl text-slate-300">
               Full-Stack Developer & Tech Enthusiast
             </p>
           </div>
 
           {/* Description */}
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
             I craft beautiful, performant web experiences using modern technologies. 
             Specialized in React, TypeScript, and backend development with Python and Django.
           </p>
@@ -42,27 +44,27 @@ export function Homepage() {
       </div>
 
       {/* Featured Skills Section */}
-      <div className="bg-slate-50 dark:bg-slate-900 px-6 py-20">
+      <div className="bg-slate-900 px-6 py-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               What I Do
             </h2>
-            <p className="text-xl text-slate-600 dark:text-slate-400">
+            <p className="text-xl text-slate-300">
               Expertise across the full development stack
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Frontend Card */}
-            <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-8 hover:border-emerald-600 dark:hover:border-emerald-400 transition-all duration-300 hover:shadow-lg dark:hover:shadow-emerald-500/10">
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-emerald-500 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-emerald-900/30 rounded-lg flex items-center justify-center">
                   <span className="text-2xl">🎨</span>
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white">Frontend</h3>
+                <h3 className="text-xl font-bold text-slate-100">Frontend</h3>
               </div>
-              <p className="text-slate-600 dark:text-slate-400 mb-4">
+              <p className="text-slate-300 mb-4">
                 Building responsive, accessible UIs with modern frameworks
               </p>
               <div className="flex flex-wrap gap-2">
@@ -73,14 +75,14 @@ export function Homepage() {
             </div>
 
             {/* Backend Card */}
-            <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-8 hover:border-emerald-600 dark:hover:border-emerald-400 transition-all duration-300 hover:shadow-lg dark:hover:shadow-emerald-500/10">
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-emerald-500 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-emerald-900/30 rounded-lg flex items-center justify-center">
                   <span className="text-2xl">⚙️</span>
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white">Backend</h3>
+                <h3 className="text-xl font-bold text-slate-100">Backend</h3>
               </div>
-              <p className="text-slate-600 dark:text-slate-400 mb-4">
+              <p className="text-slate-300 mb-4">
                 Designing scalable APIs and robust server-side architectures
               </p>
               <div className="flex flex-wrap gap-2">
@@ -91,14 +93,14 @@ export function Homepage() {
             </div>
 
             {/* Tools Card */}
-            <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-8 hover:border-emerald-600 dark:hover:border-emerald-400 transition-all duration-300 hover:shadow-lg dark:hover:shadow-emerald-500/10">
+            <div className="bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-emerald-500 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg flex items-center justify-center">
+                <div className="w-12 h-12 bg-emerald-900/30 rounded-lg flex items-center justify-center">
                   <span className="text-2xl">🛠️</span>
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white">DevOps & Tools</h3>
+                <h3 className="text-xl font-bold text-slate-100">DevOps & Tools</h3>
               </div>
-              <p className="text-slate-600 dark:text-slate-400 mb-4">
+              <p className="text-slate-300 mb-4">
                 Managing deployments and optimizing development workflows
               </p>
               <div className="flex flex-wrap gap-2">
@@ -112,14 +114,14 @@ export function Homepage() {
       </div>
 
       {/* About Section */}
-      <div className="bg-white dark:bg-slate-950 px-6 py-20">
+      <div className="bg-slate-950 px-6 py-20">
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white">
+              <h2 className="text-4xl md:text-5xl font-bold text-white">
                 About Me
               </h2>
-              <div className="space-y-4 text-slate-600 dark:text-slate-400">
+              <div className="space-y-4 text-slate-300">
                 <p>
                   I'm a passionate developer with a strong foundation in both frontend and backend technologies. 
                   I love solving complex problems and building applications that make a difference.
@@ -133,29 +135,34 @@ export function Homepage() {
                 </p>
               </div>
               <div className="pt-4">
-                <button className="bg-emerald-600 dark:bg-emerald-500 hover:bg-emerald-700 dark:hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-emerald-600 dark:bg-emerald-500 hover:bg-emerald-700 dark:hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+                >
                   Download Resume
-                </button>
+                </a>
               </div>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-6 text-center">
-                <p className="text-3xl font-bold text-emerald-600 dark:text-emerald-400">50+</p>
-                <p className="text-slate-600 dark:text-slate-400 mt-2">Projects Completed</p>
+              <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center transition duration-300 hover:-translate-y-1 hover:border-emerald-500 hover:bg-slate-800 hover:shadow-lg hover:shadow-emerald-500/10">
+                <p className="text-3xl font-bold text-emerald-400">50+</p>
+                <p className="text-slate-300 mt-2">Projects Completed</p>
               </div>
-              <div className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-6 text-center">
-                <p className="text-3xl font-bold text-emerald-600 dark:text-emerald-400">5+</p>
-                <p className="text-slate-600 dark:text-slate-400 mt-2">Years Experience</p>
+              <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center transition duration-300 hover:-translate-y-1 hover:border-emerald-500 hover:bg-slate-800 hover:shadow-lg hover:shadow-emerald-500/10">
+                <p className="text-3xl font-bold text-emerald-400">5+</p>
+                <p className="text-slate-300 mt-2">Years Experience</p>
               </div>
-              <div className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-6 text-center">
-                <p className="text-3xl font-bold text-emerald-600 dark:text-emerald-400">30+</p>
-                <p className="text-slate-600 dark:text-slate-400 mt-2">Happy Clients</p>
+              <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center transition duration-300 hover:-translate-y-1 hover:border-emerald-500 hover:bg-slate-800 hover:shadow-lg hover:shadow-emerald-500/10">
+                <p className="text-3xl font-bold text-emerald-400">30+</p>
+                <p className="text-slate-300 mt-2">Happy Clients</p>
               </div>
-              <div className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl p-6 text-center">
-                <p className="text-3xl font-bold text-emerald-600 dark:text-emerald-400">100%</p>
-                <p className="text-slate-600 dark:text-slate-400 mt-2">Satisfaction Rate</p>
+              <div className="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center transition duration-300 hover:-translate-y-1 hover:border-emerald-500 hover:bg-slate-800 hover:shadow-lg hover:shadow-emerald-500/10">
+                <p className="text-3xl font-bold text-emerald-400">100%</p>
+                <p className="text-slate-300 mt-2">Satisfaction Rate</p>
               </div>
             </div>
           </div>
