@@ -1,6 +1,6 @@
 export default function SectionVariant() {
   return (
-    <div className="flex items-center gap-4 justify-center py-4 px-6 bg-slate-500 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm w-full max-w-2xl mx-auto">
+    <div className="flex items-center gap-4 justify-center py-4 px-6 bg-slate-500 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm w-full max-w-2xl mx-auto transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/20 hover:bg-slate-600 dark:hover:bg-slate-700">
   
   {/* The Pulse Dot: Adjust h-3 w-3 to make the dot bigger/smaller */}
     <span className="relative flex h-3 w-3">
