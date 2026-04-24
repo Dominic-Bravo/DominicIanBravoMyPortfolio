@@ -1,15 +1,9 @@
-import { Navbar } from '../layout/header';
 import SectionVariant from '../layout/section';
 
-interface HomepageProps {
-  currentPage: string;
-  onNavigate: (page: string) => void;
-}
-
-export function Homepage({ currentPage, onNavigate }: HomepageProps) {
+export function Homepage() {
   return (
     <>
-      <Navbar currentPage={currentPage} onNavigate={onNavigate} />
+      {/* Hero Section */}
       
       {/* Hero Section */}
       <div className="bg-white dark:bg-slate-950 min-h-screen flex items-center justify-center px-6 py-20">
