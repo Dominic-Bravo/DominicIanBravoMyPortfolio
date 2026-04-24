@@ -29,7 +29,7 @@ export const contactMethods: ContactMethod[] = [
     title: "GitHub",
     subtitle: "code portfolio",
     description: "Browse source code and open-source contributions on GitHub.",
-    href: "https://github.com/your-username",
-    label: "github.com/your-username"
+    href: "https://github.com/Dominic-Bravo",
+    label: "github.com/Dominic-Ian-Bravo"
   }
 ];

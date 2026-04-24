@@ -18,7 +18,7 @@ export function Homepage() {
 
             {/* Main Headline */}
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl font-bold text-slate-100 leading-tight">
+                <h1 className="text-4xl md:text-6xl font-bold text-slate-100 leading-tight">
                 Hello, I'm <span className="text-emerald-400">Dominic Ian</span>
               </h1>
               <p className="text-xl md:text-2xl text-slate-300">

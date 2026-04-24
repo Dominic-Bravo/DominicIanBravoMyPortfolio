@@ -5,6 +5,7 @@ export interface Project {
   longDescription: string;
   tags: string[];
   image?: string;
+  images?: string[]; // Array of screenshot URLs
   liveLink?: string;
   githubLink?: string;
   year: number;
@@ -17,6 +18,7 @@ export const projectsData: Project[] = [
     description: "Full-stack e-commerce solution with payment integration",
     longDescription: "A complete e-commerce platform built with React, TypeScript, and Django. Features include product catalog, shopping cart, order management, and Stripe payment integration. Deployed with Docker and PostgreSQL.",
     tags: ["React", "TypeScript", "Django", "PostgreSQL", "Stripe"],
+    images: ["/screenshots/ecommerce-1.png", "/screenshots/ecommerce-2.png", "/screenshots/ecommerce-3.png"],
     year: 2024,
     liveLink: "https://example.com",
     githubLink: "https://github.com"
