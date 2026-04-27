@@ -34,8 +34,9 @@ export function ProjectsPage() {
       {/* Hero Section */}
       <div className="bg-slate-900 px-6 py-20">
         <div className="max-w-6xl mx-auto text-center space-y-4 mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-white">
-            My <span className="text-emerald-400">Projects</span>
+          <h1 className="text-5xl md:text-6xl font-bold text-emerald-400">
+            My <span className="text-white">Personal </span>
+            <span className="text-emerald-400">Projects</span>
           </h1>
           <p className="text-xl text-slate-300">
             Explore the projects I've built and contributed to
@@ -120,9 +121,9 @@ export function ProjectsPage() {
             <p className="text-slate-600 dark:text-slate-400 mb-4">
               More projects coming soon...
             </p>
-            <button className="bg-emerald-600 dark:bg-emerald-500 hover:bg-emerald-700 dark:hover:bg-emerald-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
+            {/* <button className="bg-emerald-600 dark:bg-emerald-500 hover:bg-emerald-700 dark:hover:bg-emerald-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors">
               Contact Me for Custom Work
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

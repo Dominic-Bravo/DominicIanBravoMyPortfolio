@@ -48,12 +48,14 @@ export const Navbar = ({ currentPage, onNavigate }: NavbarProps) => {
               ))}
             </ul>
 
-            <button 
-              onClick={() => onNavigate('contact')}
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-emerald-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors hover:opacity-90 text-sm lg:text-base"
             >
-              Get in Touch
-            </button>
+              Resume
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -86,15 +88,14 @@ export const Navbar = ({ currentPage, onNavigate }: NavbarProps) => {
                   {item.label}
                 </button>
               ))}
-              <button 
-                onClick={() => {
-                  onNavigate('contact');
-                  setMenuOpen(false);
-                }}
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block w-full text-left px-3 py-2 rounded-lg bg-emerald-600 text-white font-semibold hover:opacity-90 transition-opacity"
               >
-                Get in Touch
-              </button>
+                Resume
+              </a> 
             </div>
           </div>
         )}
