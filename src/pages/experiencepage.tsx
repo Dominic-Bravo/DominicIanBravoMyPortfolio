@@ -9,7 +9,7 @@ export function ExperiencePage() {
           <p className="text-emerald-400 uppercase tracking-[0.3em] text-sm font-semibold mb-3">
             Experience
           </p>
-          <h1 className="text-5xl md:text-6xl font-bold">My Professional Journey</h1>
+          <h1 className="text-5xl md:text-6xl font-bold">My Freelance Journey</h1>
           <p className="text-slate-300 mt-4 max-w-2xl mx-auto">
             Explore the roles, projects, and achievements that shaped my career in development.
           </p>
