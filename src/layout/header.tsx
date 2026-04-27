@@ -93,7 +93,7 @@ export const Navbar = ({ currentPage, onNavigate }: NavbarProps) => {
                 }}
                 className="block w-full text-left px-3 py-2 rounded-lg bg-emerald-600 text-white font-semibold hover:opacity-90 transition-opacity"
               >
-                My Resume
+                Get in Touch
               </button>
             </div>
           </div>
