@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { projectsData } from '../data/projects';
 
+
 // ProjectsPage renders the project showcase using data from the projects data file.
 export function ProjectsPage() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -49,12 +50,12 @@ export function ProjectsPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projectsData.map((project) => (
-              <div 
+              <div
                 key={project.id}
                 className="group bg-slate-900 border border-slate-800 rounded-xl overflow-hidden transition-transform duration-300 ease-out hover:-translate-y-1 hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-500/10"
               >
                 {/* Image Placeholder */}
-                <button 
+                <button
                   onClick={() => openModal(project)}
                   className="h-48 bg-gradient-to-br from-emerald-900 to-slate-950 flex items-center justify-center overflow-hidden hover:from-emerald-800 hover:to-slate-900 transition-colors cursor-pointer w-full"
                 >
@@ -78,7 +79,7 @@ export function ProjectsPage() {
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2">
                     {project.tags.slice(0, 3).map((tag) => (
-                      <span 
+                      <span
                         key={tag}
                         className="px-3 py-1 text-xs font-medium bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full"
                       >
@@ -94,17 +95,17 @@ export function ProjectsPage() {
 
                   {/* Links */}
                   <div className="flex gap-3 pt-4 border-t border-slate-200 dark:border-slate-700">
-                    <a 
-                      href={project.liveLink} 
-                      target="_blank" 
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 text-center px-3 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium rounded-lg transition duration-300 ease-out hover:-translate-y-0.5"
                     >
                       Live
                     </a>
-                    <a 
-                      href={project.githubLink} 
-                      target="_blank" 
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="flex-1 text-center px-3 py-2 border border-emerald-600 text-emerald-600 hover:bg-emerald-50 text-sm font-medium rounded-lg transition duration-300 ease-out hover:-translate-y-0.5"
                     >
@@ -134,7 +135,7 @@ export function ProjectsPage() {
           <div className="bg-slate-900 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden">
             <div className="flex items-center justify-between p-4 border-b border-slate-800">
               <h3 className="text-xl font-bold text-white">{selectedProject.title}</h3>
-              <button 
+              <button
                 onClick={closeModal}
                 className="text-slate-400 hover:text-white text-2xl"
               >
@@ -144,20 +145,20 @@ export function ProjectsPage() {
             <div className="p-4">
               {selectedProject.images && selectedProject.images.length > 0 ? (
                 <div className="relative">
-                  <img 
-                    src={selectedProject.images[currentImageIndex]} 
+                  <img
+                    src={selectedProject.images[currentImageIndex]}
                     alt={`${selectedProject.title} screenshot ${currentImageIndex + 1}`}
                     className="w-full h-auto max-h-[60vh] object-contain rounded-lg"
                   />
                   {selectedProject.images.length > 1 && (
                     <>
-                      <button 
+                      <button
                         onClick={prevImage}
                         className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full"
                       >
                         ‹
                       </button>
-                      <button 
+                      <button
                         onClick={nextImage}
                         className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full"
                       >

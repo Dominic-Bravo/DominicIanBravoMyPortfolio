@@ -1,3 +1,5 @@
+import { fdsImages } from "../utils/projectAssets";
+
 export interface Project {
   id: number;
   title: string;
@@ -59,13 +61,25 @@ export const projectsData: Project[] = [
     description: "Weather application with location-based forecasts",
     longDescription: "A weather application that provides real-time weather data and forecasts. Integrates with OpenWeather API and features location-based search, detailed weather metrics, and beautiful visualizations.",
     tags: ["React", "TypeScript", "API Integration", "Geolocation"],
+    images: [
+      fdsImages.Charts2Image,
+      fdsImages.ChartsImage,
+      fdsImages.DataFlowDiagramImage,
+      fdsImages.DevicePrototypeImage,
+      fdsImages.FloodDetectionStructureImage,
+      fdsImages.LinearRegressionClassImage,
+      fdsImages.NotificationImage,
+      fdsImages.PigWaterFlow,
+      fdsImages.PigWaterLevel,
+      fdsImages.UseCaseDiagramImage
+    ],
     year: 2023,
     liveLink: "https://example.com",
     githubLink: "https://github.com"
   },
   {
     id: 6,
-    title: "Blog Platform",
+    title: "Blog Platformsssss  ",
     description: "Content management system for blogging",
     longDescription: "A full-featured blogging platform with CMS capabilities. Built with Django backend and React frontend. Features include rich text editing, categories, comments, and SEO optimization.",
     tags: ["React", "Django", "PostgreSQL", "Rich Text Editor"],
