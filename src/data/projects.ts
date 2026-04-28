@@ -58,7 +58,7 @@ export const projectsData: Project[] = [
     ],
     year: 2023,
     liveLink: "https://example.com",
-    githubLink: "https://github.com"
+    githubLink: "https://github.com/Dominic-Bravo/HaBHASystem"
   },
   {
     id: 5,
@@ -80,7 +80,7 @@ export const projectsData: Project[] = [
     ],
     year: 2023,
     liveLink: "https://example.com",
-    githubLink: "https://github.com"
+    githubLink: "https://github.com/Dominic-Bravo/MAUIProjects" 
   },
   {
     id: 6,
