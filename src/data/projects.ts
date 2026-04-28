@@ -50,7 +50,7 @@ export const projectsData: Project[] = [
     title: "Booking system",
     description: "Real-time data visualization and analytics dashboard",
     longDescription: "An analytics dashboard displaying real-time metrics and insights. Built with React for the frontend and Django with Redis for caching. Includes interactive charts using Chart.js and comprehensive filtering options.",
-    tags: ["React", "Django", "Chart.js", "Redis", "PostgreSQL"],
+    tags: [".Net", "MAUI", "XAML", "ASP.NET Web API", "SQL Server", "Entity Framework", "Stored Procedures", "RESTful API"],
     images: [
       habHAImages.DashboardImage,
       habHAImages.DFDImage,

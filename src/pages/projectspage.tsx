@@ -78,20 +78,15 @@ export function ProjectsPage() {
 
                   {/* Tags */}
                   <div className="flex flex-wrap gap-2">
-                    {project.tags.slice(0, 3).map((tag) => (
+                    {project.tags.map((tag: string) => (
                       <span
-                        key={tag}
-                        className="px-3 py-1 text-xs font-medium bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                    {project.tags.length > 3 && (
-                      <span className="px-3 py-1 text-xs font-medium bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 rounded-full">
-                        +{project.tags.length - 3}
-                      </span>
-                    )}
-                  </div>
+                          key={tag}
+                          className="px-3 py-1 text-xs font-medium bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
 
                   {/* Links */}
                   <div className="flex gap-3 pt-4 border-t border-slate-200 dark:border-slate-700">
