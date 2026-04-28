@@ -24,20 +24,34 @@ export const experienceData: ExperienceItem[] = [
     ]
   },
   {
-    id: 2,
-    role: "Full-Stack Developer",
-    company: "Freelance",
-    period: "2024 - 2025",
-    location: "Remote",
-    description: "Building mobile applications and backend services, including a facial recognition-based attendance system for Android.",
-    highlights: [
-      "Built Android mobile apps using React Native and Expo",
-      "Developed backend APIs using Django REST Framework and FastAPI",
-      "Implemented facial recognition for attendance tracking"
+    "id": 2,
+    "role": "Full-Stack Developer",
+    "company": "Freelance",
+    "period": "2024 - 2025",
+    "location": "Remote",
+    "description": "Architected a hybrid backend system for a facial recognition-based attendance application, leveraging Django REST Framework for core business logic and FastAPI for high-performance biometric processing.",
+    "highlights": [
+      "Built Android mobile applications using React Native and Expo",
+      "Developed robust backend services using Django REST Framework for attendance logic and user management",
+      "Engineered a dedicated FastAPI microservice to handle low-latency facial recognition inference"
     ]
   },
   {
-    id: 3,
+    "id": 3,
+    "role": "IT Intern (General Office Services)",
+    "company": "Municipal Government of Libungan",
+    "period": "February 2025 – May 2025",
+    "location": "Libungan, Philippines",
+    "description": "Streamlined document lifecycle management for government records by applying database principles and automation, transitioning physical workflows toward digital efficiency.",
+    "highlights": [
+      "Categorized and indexed essential financial records, including PRs, CAFOAs, POs, and DVs, utilizing structured data schemas for improved retrieval efficiency",
+      "Developed Python scripts to automate the organization of digital document metadata, reducing manual entry errors",
+      "Managed and maintained data integrity of government records, preparing datasets for future migration into SQL-based relational databases",
+      "Ensured regulatory compliance and accessibility by implementing systematic filing protocols for sensitive government documents"
+    ]
+  },
+  {
+    id: 4,
     role: "Full-Stack Developer",
     company: "Freelance",
     period: "2023 - 2025",
@@ -51,7 +65,7 @@ export const experienceData: ExperienceItem[] = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     role: "Student Developer",
     company: "Academic / Capstone Project",
     period: "2023 - 2025",
@@ -65,7 +79,7 @@ export const experienceData: ExperienceItem[] = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     role: "Student Developer",
     company: "Academic Project",
     period: "2023 - 2024",
