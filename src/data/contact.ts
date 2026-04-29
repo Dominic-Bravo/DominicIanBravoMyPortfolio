@@ -21,8 +21,8 @@ export const contactMethods: ContactMethod[] = [
     title: "WhatsApp",
     subtitle: "instant messaging",
     description: "Chat with me directly on WhatsApp for quick responses.",
-    href: "https://wa.me/1234567890", // Replace with your actual WhatsApp number
-    label: "+1 (234) 567-8900"
+    href: "https://wa.me/09668264925", // Replace with your actual WhatsApp number
+    label: "(+63) 9668264925"
   },
   {
     id: 3,
