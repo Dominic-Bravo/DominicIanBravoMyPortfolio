@@ -22,7 +22,7 @@ export const contactMethods: ContactMethod[] = [
     subtitle: "instant messaging",
     description: "Chat with me directly on WhatsApp for quick responses.",
     href: "https://wa.me/09668264925", // Replace with your actual WhatsApp number
-    label: "(+63) 9668264925"
+    label: "+63 966-826-4925"
   },
   {
     id: 3,
@@ -53,8 +53,8 @@ export const contactMethods: ContactMethod[] = [
     title: "LinkedIn",
     subtitle: "professional network",
     description: "Connect with me on LinkedIn to see updates and project stories.",
-    href: "https://www.linkedin.com/in/dominic-ian-bravo-a773a93b2/",
-    label: "linkedin.com/in/dominic-ian-bravo-a773a93b2"
+    href: "https://www.linkedin.com/in/your-profile",
+    label: "linkedin.com/in/your-profile"
   },
   {
     id: 7,
