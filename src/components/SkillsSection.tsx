@@ -34,7 +34,7 @@ export function SkillsSection() {
               {frontendskills.map((skill) => (
                 <span 
                   key={skill} 
-                  className="px-3 py-1 text-sm rounded-full font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300"
+                  className="px-3 py-1 text-sm rounded-full font-medium bg-emerald-900/30 text-emerald-300"
                 >
                   {skill}
                 </span>
@@ -59,7 +59,7 @@ export function SkillsSection() {
               {backendskills.map((skill) => (
                 <span 
                   key={skill} 
-                  className="px-3 py-1 text-sm rounded-full font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300"
+                  className="px-3 py-1 text-sm rounded-full font-medium bg-emerald-900/30 text-emerald-300"
                 >
                   {skill}
                 </span>
