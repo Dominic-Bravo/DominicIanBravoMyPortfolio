@@ -53,8 +53,8 @@ export const contactMethods: ContactMethod[] = [
     title: "LinkedIn",
     subtitle: "professional network",
     description: "Connect with me on LinkedIn to see updates and project stories.",
-    href: "https://www.linkedin.com/in/your-profile",
-    label: "linkedin.com/in/your-profile"
+    href: "https://www.linkedin.com/in/dominic-ian-bravo-a773a93b2/",
+    label: "linkedin.com/in/dominic-ian-bravo-a773a93b2"
   },
   {
     id: 7,
