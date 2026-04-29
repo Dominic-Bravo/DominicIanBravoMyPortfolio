@@ -4,6 +4,7 @@ import { ProjectsPage } from "./pages/projectspage";
 import { ExperiencePage } from "./pages/experiencepage";
 import { ContactPage } from "./pages/contactpage";
 import { Navbar } from "./layout/header";
+import PortfolioChatBot from "./components/PortfolioChatBot";
 
 // Root app component for the portfolio.
 // Manages the active page state and renders the selected content section.
@@ -24,6 +25,7 @@ export default function App() {
       {currentPage === "projects" && <ProjectsPage />}
       {currentPage === "experience" && <ExperiencePage />}
       {currentPage === "contact" && <ContactPage />}
+      <PortfolioChatBot />
     </div>
   );
 }
