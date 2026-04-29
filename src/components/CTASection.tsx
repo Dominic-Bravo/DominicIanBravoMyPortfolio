@@ -1,6 +1,6 @@
 export function CTASection() {
   return (
-    <div className="bg-emerald-600 dark:bg-emerald-900 px-6 py-20">
+    <div className="bg-emerald-900 px-6 py-20">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         <div className="space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold text-white">
