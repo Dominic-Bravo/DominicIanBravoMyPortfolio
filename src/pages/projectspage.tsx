@@ -81,7 +81,7 @@ export function ProjectsPage() {
                     {project.tags.map((tag: string) => (
                       <span
                           key={tag}
-                          className="px-3 py-1 text-xs font-medium bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full"
+                          className="px-3 py-1 text-xs font-medium bg-emerald-900/30 text-emerald-300 rounded-full"
                         >
                           {tag}
                         </span>
@@ -89,7 +89,7 @@ export function ProjectsPage() {
                     </div>
 
                   {/* Links */}
-                  <div className="flex gap-3 pt-4 border-t border-slate-200 dark:border-slate-700">
+                  <div className="flex gap-3 pt-4 border-t border-slate-700">
                     <a
                       href={project.liveLink}
                       target="_blank"
