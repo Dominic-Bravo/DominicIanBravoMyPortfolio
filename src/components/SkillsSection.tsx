@@ -1,4 +1,9 @@
+import { Settings, Palette } from 'lucide-react';
+
 export function SkillsSection() {
+  const frontendskills = ["React", "TypeScript", "Tailwind", ".Net MAUI"];
+  const backendskills = ["Python", "Django", "FastAPI", ".Net", "Asp Web Api"];
+
   return (
     <div className="bg-slate-900 px-6 py-20">
       <div className="max-w-6xl mx-auto">
@@ -16,7 +21,9 @@ export function SkillsSection() {
           <div className="bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-emerald-500 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 bg-emerald-900/30 rounded-lg flex items-center justify-center">
-                <span className="text-2xl">🎨</span>
+                <span className="text-2xl">
+                  <Palette className="w-6 h-6 text-emerald-400" />
+                </span>
               </div>
               <h3 className="text-xl font-bold text-slate-100">Frontend</h3>
             </div>
@@ -24,10 +31,14 @@ export function SkillsSection() {
               Building responsive, accessible UIs with modern frameworks
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-sm bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full font-medium">React</span>
-              <span className="px-3 py-1 text-sm bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full font-medium">TypeScript</span>
-              <span className="px-3 py-1 text-sm bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full font-medium">Tailwind</span>
-              <span className="px-3 py-1 text-sm bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full font-medium">.Net MAUI</span>
+              {frontendskills.map((skill) => (
+                <span 
+                  key={skill} 
+                  className="px-3 py-1 text-sm rounded-full font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300"
+                >
+                  {skill}
+                </span>
+              ))}
             </div>
           </div>
 
@@ -35,7 +46,9 @@ export function SkillsSection() {
           <div className="bg-slate-900 border border-slate-800 rounded-xl p-8 hover:border-emerald-500 transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/10">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 bg-emerald-900/30 rounded-lg flex items-center justify-center">
-                <span className="text-2xl">⚙️</span>
+                <span className="text-2xl">
+                  <Settings className="w-6 h-6 text-emerald-400" />
+                </span>
               </div>
               <h3 className="text-xl font-bold text-slate-100">Backend</h3>
             </div>
@@ -43,11 +56,14 @@ export function SkillsSection() {
               Designing scalable APIs and robust server-side architectures
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-3 py-1 text-sm bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full font-medium">Python</span>
-              <span className="px-3 py-1 text-sm bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full font-medium">Django</span>
-              <span className="px-3 py-1 text-sm bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full font-medium">FastAPI</span>
-              <span className="px-3 py-1 text-sm bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full font-medium">.Net</span>
-              <span className="px-3 py-1 text-sm bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-full font-medium">Asp Web Api</span>
+              {backendskills.map((skill) => (
+                <span 
+                  key={skill} 
+                  className="px-3 py-1 text-sm rounded-full font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300"
+                >
+                  {skill}
+                </span>
+              ))}
             </div>
           </div>
 
