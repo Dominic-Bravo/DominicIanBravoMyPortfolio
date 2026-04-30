@@ -31,7 +31,7 @@ export const Navbar = ({ currentPage, onNavigate }: NavbarProps) => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <ul className="flex space-x-6 text-slate-200 font-medium">
+            <ul className="flex space-x-6 text-slate-200 font-medium tracking-wide">
               {navItems.map((item) => (
                 <li key={item.page}>
                   <button 

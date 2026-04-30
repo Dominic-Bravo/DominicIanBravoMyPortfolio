@@ -16,7 +16,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 transition-colors">
+    <div className="min-h-screen bg-slate-950 transition-colors">
       <Navbar currentPage={currentPage} onNavigate={handleNavigate} />
 
       {currentPage === "home" && <Homepage />}
