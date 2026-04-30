@@ -48,7 +48,7 @@ export function ContactPage() {
               {/* Copy Action - Changed opacity for touch devices (sm:hover) */}
               <button
                 onClick={(e) => handleCopy(e, method.label, method.id)}
-                className="absolute top-4 right-6 sm:top-6 sm:right-8 text-[10px] uppercase tracking-widest font-bold text-slate-500 hover:text-emerald-400 transition-colors opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
+                className="absolute top-4 right-6 sm:top-6 sm:right-8 text-[10px] uppercase tracking-widest font-bold text-slate-500 hover:text-emerald-400 transition-colors opacity-100"
               >
                 {copiedId === method.id ? 'Copied!' : 'Copy Info'}
               </button>
