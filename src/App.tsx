@@ -6,12 +6,10 @@ import { ContactPage } from "./pages/contactpage";
 import { Navbar } from "./layout/header";
 import PortfolioChatBot from "./components/PortfolioChatBot";
 
-// Root app component for the portfolio.
-// Manages the active page state and renders the selected content section.
+
 export default function App() {
   const [currentPage, setCurrentPage] = useState("home");
 
-  // Changes the active page and scrolls the window to the top.
   const handleNavigate = (page: string) => {
     setCurrentPage(page);
     window.scrollTo(0, 0);
