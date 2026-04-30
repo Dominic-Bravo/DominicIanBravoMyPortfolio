@@ -33,9 +33,9 @@ export function ProjectsPage() {
   return (
     <div className="bg-slate-950 min-h-screen">
       {/* Hero Section */}
-      <div className="bg-slate-900 px-6 py-20">
-        <div className="max-w-6xl mx-auto text-center space-y-4 mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-emerald-400">
+      <div className="bg-slate-900 px-4 sm:px-6 py-12 md:py-20">
+        <div className="max-w-6xl mx-auto text-center space-y-4 mb-8 md:mb-16">
+          <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-emerald-400">
             My <span className="text-white">Personal </span>
             <span className="text-emerald-400">Projects</span>
           </h1>
