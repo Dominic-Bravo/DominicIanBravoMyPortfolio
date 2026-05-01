@@ -2,14 +2,14 @@ import SectionVariant from '../layout/section';
 
 export function HeroSection() {
   return (
-    <div className="bg-slate-950 min-h-screen flex items-center justify-center px-6 py-20">
+    <div className="bg-slate-950 min-h-screen flex items-center justify-center px-6 py-20 font-mono">
       <div className="max-w-5xl w-full grid gap-10 lg:grid-cols-[1.2fr_1.4fr] items-start">
         <div className="space-y-4 text-center lg:text-left">
           {/* Status Badge */}
           <div className="flex justify-center lg:justify-start">
             <SectionVariant />
           </div>
-
+  
           {/* Main Headline */}
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold text-slate-100 leading-tight">

@@ -44,9 +44,9 @@ export default function PortfolioChatBot() {
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-[60] font-mono">
+    <div className="fixed bottom-8 right-8 z-60 font-mono">
       {isOpen && (
-        <div className="mb-4 w-80 sm:w-96 h-[500px] bg-slate-950 rounded-3xl border border-slate-800 shadow-2xl shadow-emerald-500/10 flex flex-col overflow-hidden transition-all animate-in slide-in-from-bottom-5">
+        <div className="mb-4 w-80 sm:w-96 h-500px bg-slate-950 rounded-3xl border border-slate-800 shadow-2xl shadow-emerald-500/10 flex flex-col overflow-hidden transition-all animate-in slide-in-from-bottom-5">
           
           {/* Header - Matching your VS Code card style */}
           <div className="flex items-center justify-between px-4 py-3 bg-slate-900/95 border-b border-slate-800/70">

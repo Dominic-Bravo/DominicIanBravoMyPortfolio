@@ -1,11 +1,11 @@
 import { Settings, Palette } from 'lucide-react';
 
 export function SkillsSection() {
-  const frontendskills = ["React", "TypeScript", "Tailwind", ".Net MAUI"];
-  const backendskills = ["Python", "Django", "FastAPI", ".Net", "Asp Web Api"];
+  const frontendSkills = ["React", "TypeScript", "Tailwind", ".Net MAUI"];
+  const backendSkills = ["Python", "Django", "FastAPI", ".Net", "Asp Web Api"];
 
   return (
-    <div className="bg-slate-900 px-6 py-20">
+    <div className="bg-slate-900 px-6 py-20 font-mono">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -31,7 +31,7 @@ export function SkillsSection() {
               Building responsive, accessible UIs with modern frameworks
             </p>
             <div className="flex flex-wrap gap-2">
-              {frontendskills.map((skill) => (
+              {frontendSkills.map((skill) => (
                 <span 
                   key={skill} 
                   className="px-3 py-1 text-sm rounded-full font-medium bg-emerald-900/30 text-emerald-300"
@@ -56,7 +56,7 @@ export function SkillsSection() {
               Designing scalable APIs and robust server-side architectures
             </p>
             <div className="flex flex-wrap gap-2">
-              {backendskills.map((skill) => (
+              {backendSkills.map((skill) => (
                 <span 
                   key={skill} 
                   className="px-3 py-1 text-sm rounded-full font-medium bg-emerald-900/30 text-emerald-300"
