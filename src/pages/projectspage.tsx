@@ -31,7 +31,7 @@ export function ProjectsPage() {
     }
   };
   return (
-    <div className="bg-slate-950 min-h-screen">
+    <div className="bg-slate-950 min-h-screen font-mono">
       {/* Hero Section */}
       <div className="bg-slate-900 px-4 sm:px-6 py-12 md:py-20">
         <div className="max-w-6xl mx-auto text-center space-y-4 mb-8 md:mb-16">
