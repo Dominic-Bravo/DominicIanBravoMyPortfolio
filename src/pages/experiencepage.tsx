@@ -3,7 +3,7 @@ import { experienceData } from '../data/experience';
 // ExperiencePage displays a timeline of roles and work highlights.
 export function ExperiencePage() {
   return (
-    <div className="bg-slate-950 min-h-screen px-6 py-20 text-slate-100">
+    <div className="bg-slate-950 min-h-screen px-6 py-20 text-slate-100 font-mono">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-emerald-400 uppercase tracking-[0.3em] text-sm font-semibold mb-3">
