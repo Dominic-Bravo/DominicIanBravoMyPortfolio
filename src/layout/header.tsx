@@ -79,7 +79,7 @@ export const Navbar = ({ currentPage, onNavigate }: NavbarProps) => {
                     onNavigate(item.page);
                     setMenuOpen(false);
                   }}
-                  className={`block w-full text-left px-3 py-2 rounded-lg text-base font-medium transition-colors ${
+                  className={`block w-full justify-center items-center px-3 py-2 rounded-lg text-base font-medium transition-colors ${
                     currentPage === item.page 
                       ? "bg-emerald-600 text-white" 
                       : "text-slate-200 hover:bg-slate-800 hover:text-emerald-300"
@@ -92,7 +92,7 @@ export const Navbar = ({ currentPage, onNavigate }: NavbarProps) => {
                 href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-left px-3 py-2 rounded-lg bg-emerald-600 text-white font-semibold hover:opacity-90 transition-opacity"
+                className="block w-full justify-center items-center text-center px-3 py-2 rounded-lg bg-emerald-600 text-white font-semibold hover:opacity-90 transition-opacity"
               >
                 Resume
               </a> 
