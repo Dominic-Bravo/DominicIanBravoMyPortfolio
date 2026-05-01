@@ -17,7 +17,7 @@ export function ContactPage() {
   };
 
   return (
-    <div className="bg-slate-950 min-h-screen px-4 sm:px-6 py-12 md:py-20 text-slate-100">
+    <div className="bg-slate-950 min-h-screen px-4 sm:px-6 py-12 md:py-20 text-slate-100 font-mono">
       <div className="max-w-5xl mx-auto">
         {/* Header */} 
         <div className="text-center mb-12 md:mb-16">
