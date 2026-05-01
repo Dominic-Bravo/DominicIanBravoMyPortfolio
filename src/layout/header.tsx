@@ -22,12 +22,12 @@ export const Navbar = ({ currentPage, onNavigate }: NavbarProps) => {
     <nav className="bg-slate-900/95 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50 font-mono">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <button 
-            onClick={() => onNavigate("home")}
-            className="font-bold text-emerald-400 text-lg sm:text-xl hover:opacity-80 transition-opacity"
-          >
-            DOMINIC IAN BRAVO
-          </button>
+          <button
+              onClick={() => onNavigate("home")}
+              className="font-bold text-emerald-400 text-lg sm:text-xl hover:opacity-80 transition-opacity"
+            >
+              DOMINIC IAN BRAVO
+            </button>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

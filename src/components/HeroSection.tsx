@@ -9,7 +9,7 @@ export function HeroSection() {
           <div className="flex justify-center lg:justify-start">
             <SectionVariant />
           </div>
-  
+
           {/* Main Headline */}
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold text-slate-100 leading-tight">
@@ -29,7 +29,7 @@ export function HeroSection() {
 
         {/* Code profile preview card */}
         <div className="w-full">
-          <div className="w-full bg-slate-950 rounded-[32px] border border-slate-800/70 overflow-hidden shadow-xl shadow-slate-950/50 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-500/10">
+          <div className="w-full bg-slate-950 rounded-32px border border-slate-800/70 overflow-hidden shadow-xl shadow-slate-950/50 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl hover:shadow-emerald-500/10">
             <div className="flex items-center gap-2 px-4 py-3 bg-slate-900/95 border-b border-slate-800/70">
               <div className="w-3 h-3 rounded-full bg-[#ff5f56]" />
               <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
